@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios';
 export default () => {
     //keep track of what is being typed via useState hook
-    const [title, setTutle] = useState(""); 
+    const [title, setTitle] = useState(""); 
     const [price, setPrice] = useState("");
     const [desc, setDesc] = useState("");
     //handler when the form is submitted
@@ -23,7 +23,7 @@ export default () => {
         <form onSubmit={onSubmitHandler}>
             <p>
                 <label>Title</label><br/>
-                <input type="text" onChange = {(e)=>setTutle(e.target.value)}/>
+                <input type="text" onChange = {(e)=>setTitle(e.target.value)}/>
             </p>
             <p>
                 <label>Price</label><br/>
